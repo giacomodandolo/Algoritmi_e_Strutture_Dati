@@ -62,7 +62,7 @@ int majority(int *a, int N) {
 }
 
 int main() {
-    int N = 7, vet[7] = {3,3,9,4,3,5,3},
+    int N = 7, vet[7] = {3,3,9,4,4,5,3},
         maj;
     maj = majority(vet, N);
     if (maj != -1) {
