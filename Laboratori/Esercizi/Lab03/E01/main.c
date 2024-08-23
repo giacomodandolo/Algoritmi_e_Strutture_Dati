@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int majorityR(int *a, int l, int r, int *count) {
     int i, N, m, countL = 0, majL, countR = 0, majR;
     

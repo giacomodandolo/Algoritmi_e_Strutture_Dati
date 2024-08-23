@@ -67,7 +67,7 @@ int main(void) {
     fscanf(file, "%d %d", &nr, &nc);
     mat = malloc2dR(file, nr, nc);
 
-//    printf("nr: %d, nc: %d", nr, nc);
+    // printf("nr: %d, nc: %d", nr, nc);
     dimB = dimN = (nr*nc)/2;
     if (nr%2 && nc%2)
         dimB++;
@@ -82,5 +82,6 @@ int main(void) {
     free1d(vettN, dimN);
     free1d(vettB, dimB);
     free2d(mat, nr, nc);
+    fclose(file);
     return 0;
 }

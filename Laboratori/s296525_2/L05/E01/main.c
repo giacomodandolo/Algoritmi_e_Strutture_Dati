@@ -76,7 +76,7 @@ int main() {
     att *v;
     FILE* file;
 
-    if((file = fopen("att1.txt", "r")) == NULL) {
+    if((file = fopen("att.txt", "r")) == NULL) {
         printf("Il file è vuoto.\n");
         return 1;
     }
