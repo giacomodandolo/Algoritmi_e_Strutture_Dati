@@ -36,5 +36,6 @@
  [E02 (fast)](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab07/E02_fast) |
  [E02 (github)](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab07/E02_github)
 ### Lab08 ([Testo](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/blob/main/Laboratori/Lab08.pdf))
+ [E02](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab08/E02)
 ### Lab09 ([Testo](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/blob/main/Laboratori/Lab09.pdf))
  
