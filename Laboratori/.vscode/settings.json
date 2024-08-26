@@ -58,6 +58,10 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "item.h": "c",
-    "graph.h": "c"
+    "graph.h": "c",
+    "quotazione.h": "c",
+    "titolo.h": "c",
+    "general.h": "c",
+    "list.h": "c"
   }
 }
