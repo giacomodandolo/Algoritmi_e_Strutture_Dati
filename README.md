@@ -6,6 +6,11 @@
  [Algoritmi](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Teoria) | 
  [Sedgewick](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Sedgewick)
 
+# Implementazione Strutture Dati
+ [Item](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Item) | 
+ [List](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/List) |
+ [Set](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Set)
+
 # Laboratori
 
 ### Lab01 ([Testo](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/blob/main/Laboratori/Lab01.pdf))
@@ -49,5 +54,5 @@
 
 ### Lab09 ([Testo](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/blob/main/Laboratori/Lab09.pdf))
 
-[E01](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab09/E01)
+ [E01](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab09/E01)
  
