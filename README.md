@@ -7,17 +7,38 @@
  [Sedgewick](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Sedgewick)
 
 # Implementazione Strutture Dati
- [Item](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Item) | 
- [List](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/List) |
- [Set](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Set) |
- [Stack](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Stack) |
- [Queue](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Queue) |
- [Priority Queue](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Priority_Queue) |
- [Symbol Table](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Symbol_Table) |
- [Hash Table](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Hash_Table) |
- [Heap](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Heap) |
- [Binary Search Tree](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Binary_Search_Tree) |
- [Graph](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Graph) |
+
+### Item
+ [Item](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Item)
+
+### List
+ [List](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/List)
+
+### Set
+ [Lista non ordinata](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Set/Lista_non_ordinata) </br>
+ [Vettore ordinato](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Set/Vettore_ordinato)
+
+### Stack
+ [Stack](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Stack) 
+
+### Queue
+ [Lista](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Queue/Lista)  </br>
+ [Vettore](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Queue/Vettore)
+
+### Priority Queue
+ [Lista ordinata](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Priority_Queue/Lista_ordinata) </br>
+ [Heap](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Priority_Queue/Heap)
+
+### Symbol Table
+ [Direct access](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Symbol_Table/Direct_Access) </br>
+ [Vettore non ordinato](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Symbol_Table/Vettore_non_ordinato) </br>
+ [Vettore ordinato](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Symbol_Table/Vettore_ordinato) </br>
+ [Lista non ordinata](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Symbol_Table/Lista_non_ordinata) </br>
+ [Lista ordinata](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Symbol_Table/Lista_non_ordinata) </br>
+ [Hash Table](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Hash_Table)
+
+### Heap
+ [Heap](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Heap)
  
 
 # Laboratori
