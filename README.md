@@ -40,7 +40,15 @@
 ### Heap
  [Heap](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Heap)
  
+### Binary Search Tree
+ [Basic](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Binary_Search_Tree/Basic) <br/>
+ [Extended](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Binary_Search_Tree/Extended) <br/>
+ [Interval Binary Search Tree](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Binary_Search_Tree/Interval_Binary_Search_Tree)
 
+ ### Graph
+ [Orientato](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Graph/Oriented) <br/>
+ [Non orientato](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Graph/Not_Oriented)
+ 
 # Laboratori
 
 ### Lab01 ([Testo](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/blob/main/Laboratori/Lab01.pdf))
