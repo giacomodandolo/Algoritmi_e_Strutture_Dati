@@ -194,3 +194,207 @@ void GRAPHpathH(Graph G, int id1, int id2) {
     if (found == 0) 
         printf("\n Path not found!\n");
 }
+
+static void SCCdfsR(Graph G, int w, int *scc, int *time0, int time1, int *post) {
+    link t;
+
+    scc[w] = time1;
+    for (t = G->ladj[w]; t != G->z; t = t->next)
+        if (scc[t->v] == -1)
+            SCCdfsR(G, t->v, scc, time0, time1, post);
+    post[(*time0)++]= w;
+}
+
+int GRAPHscc(Graph G) {
+    int v, time0 = 0, time1 = 0, *sccG, *sccR, *postG, *postR;
+    Graph R = GRAPHreverse(G);
+
+    sccG = malloc(G->V * sizeof(int));
+    sccR = malloc(G->V * sizeof(int));
+    postG = malloc(G->V * sizeof(int));
+    postR = malloc(G->V * sizeof(int));
+
+    for (v = 0; v < G->V; v++) {
+        sccG[v] = -1; 
+        sccR[v] = -1; 
+        postG[v] = -1; 
+        postR[v] = -1;
+    }
+    for (v=0; v < G->V; v++)
+        if (sccR[v] == -1)
+            SCCdfsR(R, v, sccR, &time0, time1, postR);
+    
+    time0 = 0; 
+    time1 = 0;
+    for (v = G->V-1; v >= 0; v--)
+        if (sccG[postR[v]] == -1){
+            SCCdfsR(G, postR[v], sccG, &time0, time1, postG);
+            time1++;
+        }
+    
+    printf("strongly connected components \n");
+    for (v = 0; v < G->V; v++)
+        printf("node %s in scc %d\n", STsearchByIndex(G->tab,v), sccG[v]);
+    
+    return time1;
+}
+
+static int mstE(Graph G, Edge *mst, Edge *a) {
+    int i, k;
+
+    GRAPHedges(G, a);
+    sort(a, 0, G->E-1);
+    UFinit(G->V);
+    for (i = 0, k = 0; i < G->E && k < G->V-1; i++)
+        if (!UFfind(a[i].v, a[i].w)) { 
+            UFunion(a[i].v, a[i].w); 
+            mst[k++] = a[i];
+        }
+    return k;
+}
+
+void GRAPHmstK(Graph G) {
+    int i, k, weight = 0;
+    Edge *mst = malloc((G->V-1) * sizeof(Edge)); 
+    Edge *a = malloc(G->E * sizeof(Edge));  
+
+    k = mstE(G, mst, a);
+
+    printf("\nEdges in the MST: \n");
+    for (i=0; i < k; i++) {
+        printf("(%s - %s) \n",  STsearchByIndex(G->tab, mst[i].v), 
+                                STsearchByIndex(G->tab, mst[i].w));
+        weight += mst[i].wt;
+    }
+    printf("minimum weight: %d\n", weight);
+}
+
+static void mstV(Graph G, int *st, int *wt) {
+    int v, w, min, *fr = malloc(G->V*sizeof(int));
+    
+    for (v=0; v < G->V; v++) { 
+        st[v] = -1; 
+        fr[v] = v;  
+        wt[v] = maxWT; 
+    }
+    st[0] = 0;   
+    wt[0] = 0;   
+    wt[G->V] = maxWT;
+
+    for (min = 0; min != G->V; ) {
+        v = min;  
+        st[min] = fr[min];
+        for (w = 0, min = G->V; w < G->V; w++)
+            if (st[w] == -1) {
+                if (G->madj[v][w] < wt[w]) { 
+                    wt[w] = G->madj[v][w]; 
+                    fr[w] = v; 
+                }
+                if (wt[w] < wt[min]) 
+                    min = w;
+            }
+    }
+}
+
+void GRAPHmstP(Graph G) {
+    int v, *st, *wt, weight = 0;
+
+    st = malloc(G->V*sizeof(int)); 
+    wt = malloc((G->V+1)*sizeof(int));
+
+    mstV(G, st, wt);
+
+    printf("\nEdges in the MST: \n");
+
+    for (v = 0; v < G->V; v++) {
+        if (st[v] != v) {
+            printf("(%s-%s)\n", STsearchByIndex(G->tab, st[v]),
+                                STsearchByIndex(G->tab, v));
+            weight += wt[v];
+        }
+    }
+    printf("\nminimum weight: %d\n", weight);
+}
+
+void GRAPHspD(Graph G, int id) {
+    int v;
+    link t;
+    PQ pq = PQinit(G->V);
+    int *st, *d;
+
+    st = malloc(G->V*sizeof(int));
+    d = malloc(G->V*sizeof(int));
+    for (v = 0; v < G->V; v++) {
+        st[v] = -1;
+        d[v] = maxWT;
+        PQinsert(pq, d, v);
+    }
+
+    d[id] = 0;
+    st[id] = id;
+    PQchange(pq, d, id);
+
+    while (!PQempty(pq)) {
+        if (d[v = PQextractMin(pq, d)] != maxWT)
+            for (t = G->ladj[v]; t != G->z ; t = t->next)
+                if (d[v] + t->wt < d[t->v]) {
+                    d[t->v] = d[v] + t->wt;
+                    PQchange(pq, d, t->v);
+                    st[t->v] = v;
+                }
+    }
+
+    printf("\n Shortest path tree\n");
+    for (v = 0; v < G->V; v++)
+        printf("parent of %s is %s \n", STsearchByIndex(G->tab, v),
+                                        STsearchByIndex (G->tab, st[v]));
+    
+    printf("\n Min.dist. from %s\n", STsearchByIndex(G->tab, s));
+    for (v = 0; v < G->V; v++)
+        printf("%s: %d\n", STsearchByIndex(G->tab, v), d[v]);
+    PQfree(pq);
+}
+
+void GRAPHspBF(Graph G, int id) {
+    int v, i, negcycfound;
+    link t;
+    int *st, *d;
+
+    st = malloc(G->V*sizeof(int));
+    d = malloc(G->V*sizeof(int));
+
+    for (v = 0; v < G->V; v++) {
+        st[v]= -1;
+        d[v] = maxWT;
+    }
+    d[id] = 0;
+    st[id] = id;
+
+    for (i = 0; i < G->V-1; i++)
+        for (v = 0; v < G->V; v++)
+            if (d[v] < maxWT)
+                for (t = G->ladj[v]; t != G->z ; t = t->next)
+                    if (d[t->v] > d[v] + t->wt) {
+                        d[t->v] = d[v] + t->wt;
+                        st[t->v] = v;
+                    }
+    negcycfound = 0;
+    for (v = 0; v < G->V; v++)
+        if (d[v] < maxWT)
+            for (t = G->ladj[v]; t != G->z ; t = t->next)
+                if (d[t->v] > d[v] + t->wt)
+                    negcycfound = 1;
+
+    if (negcycfound == 0) {
+        printf("\n Shortest path tree\n");
+        for (v = 0; v < G->V; v++)
+            printf("Parent of %s is %s \n", STsearchByIndex(G->tab, v),
+                                            STsearchByIndex(G->tab, st[v]));
+        printf("\n Min.dist. from %s\n", STsearchByIndex (G->tab, s));
+        for (v = 0; v < G->V; v++)
+        printf("%s: %d\n", STsearchByIndex (G->tab, v), d[v]);
+    }
+    else
+        printf("\n Negative cycle found!\n");
+}
+

@@ -29,6 +29,8 @@ void GRAPHremoveE(Graph G, int id1, int id2);
 /* CAMMINI */
 int GRAPHpath(Graph G, int id1, int id2);
 void GRAPHpathH(Graph G, int id1, int id2);
+
+/* VISITA */
 void GRAPHbfs(Graph G, int id);
 void GRAPHdfs(Graph G, int id);
 

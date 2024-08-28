@@ -198,3 +198,29 @@ void GRAPHpathH(Graph G, int id1, int id2) {
     if (found == 0) 
         printf("\n Path not found!\n");
 }
+
+static void dfsRcc(Graph G, int v, int id, int *cc) {
+    link t;
+
+    cc[v] = id;
+    for (t = G->ladj[v]; t != G->z; t = t->next)
+        if (cc[t->v] == -1)
+            dfsRcc(G, t->v, id, cc);
+}
+
+int GRAPHcc(Graph G) {
+    int v, id = 0, *cc;
+    
+    cc = malloc(G->V * sizeof(int));
+    for (v = 0; v < G->V; v++) 
+        cc[v] = -1;
+    for (v = 0; v < G->V; v++)
+        if (cc[v] == -1) 
+            dfsRcc(G, v, id++, cc);
+    
+    printf("Connected component(s) \n");
+    for (v = 0; v < G->V; v++)
+        printf("node %s in cc %d\n", STsearchByIndex(G->tab,v), cc[v]);
+
+    return id;
+}
