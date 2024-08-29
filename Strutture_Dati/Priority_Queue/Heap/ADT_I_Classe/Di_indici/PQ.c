@@ -32,7 +32,7 @@ void PQfree(PQ pq) {
     free(pq);
 }
 
-int PQempty(PQ pq){ 
+int PQempty(PQ pq) { 
     return pq->heapsize == 0; 
 }
 
@@ -40,7 +40,7 @@ int PQsize(PQ pq) {
     return pq->heapsize; 
 }
 
-void PQinsert(PQ pq, int index, int prio){
+void PQinsert(PQ pq, int index, int prio) {
     int i;
 
     i = pq->heapsize++;
@@ -54,7 +54,7 @@ void PQinsert(PQ pq, int index, int prio){
     pq->qp[index] = i;
 }
 
-static void Swap(PQ pq, int pos1, int pos2){
+static void Swap(PQ pq, int pos1, int pos2) {
     heapItem temp;
     int index1, index2;
 

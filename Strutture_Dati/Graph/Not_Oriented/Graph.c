@@ -7,7 +7,7 @@ struct graph {
     ST tab;
 };
 
-static int **MATRIXint(int r, int c, int val) {
+static int **MATRIXinit(int r, int c, int val) {
     int i, j;
     int **t = malloc(r * sizeof(int *));
     

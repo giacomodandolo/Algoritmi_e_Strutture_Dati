@@ -74,10 +74,10 @@ SET SETintersection(SET s1, SET s2) {
     
     s = SETinit(s1->N + s2->N);
     x1 = s1->head;
-    while (x1 != NULL) {
+    while (x1 != NULL) {                        /* se prima lista non nulla */
         x2 = s2->head;
-        while (x2 != NULL) {
-            if (ITEMeq(x1->val, x2->val)) {
+        while (x2 != NULL) {                    /* se seconda lista non nulla */
+            if (ITEMeq(x1->val, x2->val)) {     /* se sono uguali, inserisco */
                 SETfill(s, x1->val); 
                 counts++; 
                 break;

@@ -13,6 +13,6 @@ int QUEUEempty(QUEUE q);
 void QUEUEput(QUEUE q, Item val);
 
 /* ESTRAZIONE */
-Item QUEUEget (QUEUE q);
+Item QUEUEget(QUEUE q);
 
 #endif

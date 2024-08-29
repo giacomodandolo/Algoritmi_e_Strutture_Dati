@@ -45,4 +45,8 @@ void GRAPHmstP(Graph G);
 void GRAPHspD(Graph G, int id);
 void GRAPHspBF(Graph G, int id);
 
+/* ORDINAMENTO TOPOLOGICO (DAG) */
+void TSdfsR(Graph G, int v, int *ts, int *pre, int *time);
+void DAGrts(Graph G);
+
 #endif

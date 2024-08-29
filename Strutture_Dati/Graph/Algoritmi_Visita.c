@@ -167,18 +167,22 @@ static void dfsR(Graph G, Edge e, int *time, int *pre, int *post, int *st) {
             x = EDGEcreate(w, v);
         }
     
+    /* Non orientato */
     if (pre[w] < pre[v])
         printf("(%s, %s): B\n", STsearchByIndex(G->tab, x.v),
                                 STsearchByIndex(G->tab, x.w));
-    if (post[v] == -1)
-        printf("(%s, %s): B\n", STsearchByIndex(G->tab, x.v),
-                                STsearchByIndex(G->tab, x.w));
+    
+    /* Orientato */
+    if (pre[w] < pre[v])
+        if (post[v] == -1)
+            printf("(%s, %s): B\n", STsearchByIndex(G->tab, x.v),
+                                    STsearchByIndex(G->tab, x.w));
         else
             if (pre[v] > pre[w])
                 printf("(%s, %s): F\n", STsearchByIndex(G->tab, x.v),
                                         STsearchByIndex(G->tab, x.w));
             else
-                printf("(%s, %s): C\n",  STsearchByIndex(G->tab, x.v),
+                printf("(%s, %s): C\n", STsearchByIndex(G->tab, x.v),
                                         STsearchByIndex(G->tab, x.w));
     
     post[w] = (*time)++;

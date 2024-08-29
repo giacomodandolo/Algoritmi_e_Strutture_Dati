@@ -41,15 +41,15 @@ SET SETunion(SET s1, SET s2) {
 
     s = SETinit(size1+size2);
     for(k = 0; (i < size1) || (j < size2); k++)
-        if (i >= size1) 
+        if (i >= size1)                         /* primo set terminato */
             s->v[k] = s2->v[j++];
-        else if (j >= size2) 
+        else if (j >= size2)                    /* secondo set terminato */
             s->v[k] = s1->v[i++];
-        else if (ITEMless(s1->v[i], s2->v[j]))
+        else if (ITEMless(s1->v[i], s2->v[j]))  /* primo minore del secondo */
             s->v[k] = s1->v[i++];
-        else if (ITEMless(s2->v[j], s1->v[i]))
+        else if (ITEMless(s2->v[j], s1->v[i]))  /* secondo minore del primo */
             s->v[k] = s2->v[j++];
-        else { 
+        else {                                  /* i due valori sono uguali */
             s->v[k] = s1->v[i++]; 
             j++; 
         }
@@ -64,14 +64,14 @@ SET SETintersection(SET s1, SET s2) {
 
     minsize = min(size1, size2);
     s = SETinit(minsize);
-    while ((i < size1) && (j < size2)) {
-        if (ITEMeq(s1->v[i], s2->v[j])) {
+    while ((i < size1) && (j < size2)) {        /* nessuno dei due è terminato */
+        if (ITEMeq(s1->v[i], s2->v[j])) {       /* se uguali, inserisci */
             s->v[k++] = s1->v[i++]; 
             j++;
         }
-        else if (ITEMless(s1->v[i], s2->v[j])) 
+        else if (ITEMless(s1->v[i], s2->v[j]))  /* se primo minore del secondo */
             i++;
-        else 
+        else                                    /* se secondo minore del primo */
             j++;
     }
     s->N = k;

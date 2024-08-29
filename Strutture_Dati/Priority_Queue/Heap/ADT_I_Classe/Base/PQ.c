@@ -37,7 +37,7 @@ int PQsize(PQ pq) {
     return pq->heapsize; 
 }
 
-void PQinsert (PQ pq, Item val) {
+void PQinsert(PQ pq, Item val) {
     int i;
 
     i = pq->heapsize++;
@@ -71,7 +71,7 @@ void PQdisplay(PQ pq) {
         ITEMstore(pq->A[i]);
 }
 
-void PQchange (PQ pq, Item val) {
+void PQchange(PQ pq, Item val) {
     int i, found = 0, pos;
 
     for (i = 0; i < pq->heapsize && found == 0; i++)

@@ -7,7 +7,7 @@ struct graph {
     ST tab;
 };
 
-static int **MATRIXint(int r, int c, int val) {
+static int **MATRIXinit(int r, int c, int val) {
     int i, j;
     int **t = malloc(r * sizeof(int *));
     
@@ -398,3 +398,33 @@ void GRAPHspBF(Graph G, int id) {
         printf("\n Negative cycle found!\n");
 }
 
+void TSdfsR(Graph G, int v, int *ts, int *pre, int *time) {
+    link t; 
+    pre[v] = 0;
+
+    for (t = G->ladj[v]; t != G->z; t = t->next)
+        if (pre[t->v] == -1)
+            TSdfsR(G, t->v, ts, pre, time);
+
+    ts[(*time)++] = v;
+}
+
+void DAGrts(Graph G) {
+    int v, time = 0, *pre, *ts;
+
+    pre = (int*) malloc(G->V * sizeof(int));
+    ts = (int*) malloc(G->V * sizeof(int));
+
+    for (v = 0; v < G->V; v++) { 
+        pre[v] = -1; 
+        ts[v] = -1; 
+    }
+    for (v = 0; v < G->V; v++)
+        if (pre[v]== -1) 
+            TSdfsR(G, v, ts, pre, &time);
+
+    printf("DAG nodes in reverse topological order \n");
+    for (v = 0; v < G->V; v++)
+        printf("%s ", STsearchByIndex(G->tab, ts[v]));
+    printf("\n");
+}

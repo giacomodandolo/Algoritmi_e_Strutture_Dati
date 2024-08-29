@@ -73,7 +73,7 @@ void PQdisplay(PQ pq) {
     return;
 }
 
-void PQchange (PQ pq, Item val) {
+void PQchange(PQ pq, Item val) {
     link x, p;
 
     if (PQempty(pq)) {
@@ -82,7 +82,7 @@ void PQchange (PQ pq, Item val) {
     }
     for(x = pq->head, p = NULL; x != NULL; p = x, x = x->next) {
         if (ITEMeq(x->val, val)) {
-            if (x==pq->head) 
+            if (x == pq->head) 
                 pq->head = x->next;
             else 
                 p->next = x->next;

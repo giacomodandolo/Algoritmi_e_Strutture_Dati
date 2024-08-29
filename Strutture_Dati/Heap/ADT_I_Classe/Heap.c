@@ -66,11 +66,11 @@ void HEAPify(Heap h, int i) {
 
     l = LEFT(i);
     r = RIGHT(i);
-    if ((l<h->heapsize) && KEYcmp(KEYget(h->A[l]),KEYget(h->A[i])) == 1)
+    if ((l < h->heapsize) && KEYcmp(KEYget(h->A[l]), KEYget(h->A[i])) == 1)
         largest = l;
     else
         largest = i;
-    if ((r<h->heapsize) && KEYcmp(KEYget(h->A[r]), KEYget(h->A[largest])) == 1)
+    if ((r < h->heapsize) && KEYcmp(KEYget(h->A[r]), KEYget(h->A[largest])) == 1)
         largest = r;
     if (largest != i) {
         Swap(h, i, largest);
