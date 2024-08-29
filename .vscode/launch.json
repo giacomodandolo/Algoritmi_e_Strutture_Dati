@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/giaco/Documents/Uni/Algoritmi_e_Strutture_Dati/Implementazioni/Liste/Non_ordinata",
-      "program": "c:/Users/giaco/Documents/Uni/Algoritmi_e_Strutture_Dati/Implementazioni/Liste/Non_ordinata/build/Debug/outDebug",
+      "cwd": "c:/Users/giaco/Documents/Uni/Algoritmi_e_Strutture_Dati/Laboratori/Esercizi/Lab09/E01",
+      "program": "c:/Users/giaco/Documents/Uni/Algoritmi_e_Strutture_Dati/Laboratori/Esercizi/Lab09/E01/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -93,4 +93,5 @@
 ### Lab09 ([Testo](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/blob/main/Laboratori/Lab09.pdf))
 
  [E01](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab09/E01)
+ [E01 (github)](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab09/E01_github)
  
