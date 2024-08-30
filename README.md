@@ -148,6 +148,7 @@
  [02 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2022_09_02.pdf)
  
 ### 2023
- [07 Febbraio 2023](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2023_02_07.pdf) <br/>
+ [07 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2023_02_07.pdf) <br/>
+ [11 Maggio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2023_05_11.pdf)
  
  
