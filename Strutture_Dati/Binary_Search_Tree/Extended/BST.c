@@ -239,7 +239,7 @@ link joinLR(link a, link b, link z) {
     b = partR(b, 0);
     b->l = a;
     a->p = b;
-    b->N = a->N + b->r->N +1;
+    b->N = a->N + b->r->N + 1;
     
     return b;
 }

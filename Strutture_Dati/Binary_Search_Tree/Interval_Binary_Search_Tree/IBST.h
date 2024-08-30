@@ -28,7 +28,16 @@ link joinLR(link a, link b, link z);
 /* CANCELLAZIONE */
 void IBSTdelete(IBST ibst, Item x);
 
-/* RICERCA */
+/* 
+    --- RICERCA ---
+
+    Si ha la ricerca di un nodo h con intervallo che interseca
+    l'intervallo i attraverso il percorrimento dell'albero dalla
+    radice e terminando quando viene trovato l'intervallo che
+    interseca i oppure si è giunti ad un albero vuoto.
+    Si ha ricorsione dal nodo h sul sottoalbero sinistro se
+    h->l->max > low[i], altrimenti sul sottoalbero destro. 
+*/
 Item IBSTsearch(IBST ibst, Item x);
 
 /* VISITA */

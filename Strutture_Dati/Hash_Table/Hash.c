@@ -6,12 +6,12 @@ int hash(float k, int M, float s, float t) {
 }
 
 /* METODO MODULARE */
-int hash(int k, int M){
+int hash(int k, int M) {
     return (k%M);
 }
 
 /* METODO DI HORNER */
-int hash (char *v, int M){ 
+int hash(char *v, int M) { 
     int h = 0, base = 128;
 
     for (; *v != '\0'; v++)
@@ -21,7 +21,7 @@ int hash (char *v, int M){
 }
 
 /* CHIAVI STRINGA CON BASE PRIMA */
-int hash (char *v, int M) { 
+int hash(char *v, int M) { 
     int h = 0, base = 127;
 
     for (; *v != '\0'; v++)
@@ -31,7 +31,7 @@ int hash (char *v, int M) {
 }
 
 /* CHIAVI STRINGA CON HASH UNIVERSALE */
-int hashU( char *v, int M) { 
+int hashU(char *v, int M) { 
     int h, a = 31415, b = 27183;
 
     for (h = 0; *v != '\0'; v++, a = a*b % (M-1))

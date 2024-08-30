@@ -195,6 +195,17 @@ void GRAPHpathH(Graph G, int id1, int id2) {
         printf("\n Path not found!\n");
 }
 
+Graph GRAPHreverse(Graph G) {
+    int v;
+    link t;
+    Graph R = GRAPHinit(G->V);
+
+    for (v = 0; v < G->V; v++)
+        for (t = G->ladj[v]; t != G->z; t = t->next)
+            GRAPHinsertE(R, t->v, v);
+    return R;
+}
+
 static void SCCdfsR(Graph G, int w, int *scc, int *time0, int time1, int *post) {
     link t;
 

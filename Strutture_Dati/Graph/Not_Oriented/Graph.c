@@ -144,7 +144,8 @@ static int pathR(Graph G, int v, int w, int *visited) {
         if (G->madj[v][t] == 1)
             if (visited[t] == 0)
                 if (pathR(G, t, w, visited)) {
-                    printf("(%s, %s) in path\n", STsearchByIndex(G->tab, v), STsearchByIndex(G->tab, t));
+                    printf("(%s, %s) in path\n",    STsearchByIndex(G->tab, v), 
+                                                    STsearchByIndex(G->tab, t));
                     return 1;
                 }
     
