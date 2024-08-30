@@ -49,7 +49,7 @@
  [Orientato](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Graph/Oriented) <br/>
  [Non orientato](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Graph/Not_Oriented) 
  
-# Laboratori
+# LABORATORI
 
 ### Lab01 ([Testo](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/blob/main/Laboratori/Lab01.pdf))
  [E01](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/s296525_1/L01/E01) |
