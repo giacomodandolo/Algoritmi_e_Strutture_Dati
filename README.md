@@ -1,12 +1,12 @@
-# Algoritmi_e_Strutture_Dati
+# ALGORITMI E STRUTTURE DATI
  Materiale per il corso di Algoritmi e Strutture Dati del PoliTO. 
 
-# Teoria
+# TEORIA
  [Strutture Dati](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Programmazione) | 
  [Algoritmi](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Teoria) | 
  [Sedgewick](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Sedgewick)
 
-# Implementazione Strutture Dati
+# IMPLEMENTAZIONI DI STRUTTURE DATI
 
 ### Item
  [Item](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Strutture_Dati/Item)
@@ -94,4 +94,56 @@
 
  [E01](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab09/E01)
  [E01 (github)](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Laboratori/Esercizi/Lab09/E01_github)
+ 
+# TEMI D'ESAME
+
+### 2014
+ [06 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2014_02_06.pdf){:target="_blank"}
+ [24 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2014_02_24.pdf){:target="_blank"}
+ [27 Giugno](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2014_06_27.pdf){:target="_blank"}
+ [03 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2014_09_03.pdf){:target="_blank"}
+ 
+### 2015
+ [02 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2015_02_02.pdf){:target="_blank"}
+ [23 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2015_02_23.pdf){:target="_blank"}
+ [16 Giugno](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2015_06_16.pdf){:target="_blank"}
+ [02 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2015_09_02.pdf){:target="_blank"}
+ 
+### 2016
+ [26 Gennaio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2016_01_26.pdf){:target="_blank"}
+ [22 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2016_02_22.pdf){:target="_blank"}
+ [14 Giugno](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2016_06_14.pdf){:target="_blank"}
+ [09 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2016_09_09.pdf){:target="_blank"}
+ 
+### 2017
+ [04 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2017_02_04.pdf){:target="_blank"}
+ [22 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2017_02_22.pdf){:target="_blank"}
+ [26 Giugno](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2017_06_26.pdf){:target="_blank"}
+ [18 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2017_09_18.pdf){:target="_blank"}
+ 
+### 2018
+ [29 Gennaio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2018_01_29.pdf){:target="_blank"}
+ [13 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2018_02_13.pdf){:target="_blank"}
+ [21 Giugno](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2018_06_21.pdf){:target="_blank"}
+ [13 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2018_09_13.pdf){:target="_blank"}
+ 
+### 2019
+ [31 Gennaio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2019_01_31.pdf){:target="_blank"}
+ [22 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2019_02_22.pdf){:target="_blank"}
+ [02 Luglio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2019_07_02.pdf){:target="_blank"}
+ [18 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2019_09_18.pdf){:target="_blank"}
+ 
+### 2020
+ [28 Gennaio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2020_01_28.pdf){:target="_blank"}
+ [21 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2020_02_21.pdf){:target="_blank"}
+ 
+### 2022
+ [27 Gennaio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2022_01_27.pdf){:target="_blank"}
+ [09 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2022_02_09.pdf){:target="_blank"}
+ [27 Giugno](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2022_06_27.pdf){:target="_blank"}
+ [02 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2022_09_02.pdf){:target="_blank"}
+ 
+### 2023
+ [07 Febbraio 2023](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2023_02_07.pdf){:target="_blank"}
+ 
  
