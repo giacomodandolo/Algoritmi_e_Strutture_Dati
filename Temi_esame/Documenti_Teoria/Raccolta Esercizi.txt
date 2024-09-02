@@ -1,0 +1,62 @@
+Analisi della complessità
+	Equazione alla ricorrenze
+
+Algoritmi di ordinamento ricorsivi
+	Quicksort
+	Bottom-up Merge-Sort
+	Merge-Sort
+
+Heap
+	Inserimento in coda a priorità, cambio di priorità
+	Coda a priorità e tabella di Hash
+	Inserimento e cancellazione in coda a priorità, cambio di priorità
+	Trasformazione in un heap e heapsort
+
+Programmazione dinamica
+	Parentesizzazione
+	LIS
+
+Paradigma Greedy
+	Codice di Huffman
+	Massimo numero di attività mutuamente compatibili
+
+Tabella di Hash
+	Inserimento in tabella di Hash
+		Linear Chaining
+		Open Addressing
+			Linear Probing
+			Quadratic Probing
+			Double Hashing
+
+BST
+	Espressione in forma prefissa, postfissa e infissa da trasformare in una delle altre
+	Inserimento in radice e cancellazione
+	Inserimento e cancellazione in BST vuoto
+	Partizionamento intorno alla k-esima chiave
+	Partizionamento intorno alla chiave mediana
+	Selezione nel BST
+	Visita in pre-order, in-order, post-order
+	Ottieni albero binario da visite
+
+IBST
+	Inserimento in foglia
+
+Grafo
+	Rappresentazione come lista e matrice delle adiacenze
+
+Visita del grafo
+	Visita in profondità
+	Visita in ampiezza
+	Punti di articolazione
+	Cammino massimo del DAG
+	Algoritmo di Kosaraju
+	Ordinamento topologico DAG
+	Ordinamento topologico inverso DAG
+
+Minimum Spanning Tree
+	Algoritmo di Prim
+	Algoritmo di Kruskal
+
+Cammino minimo
+	Algoritmo di Djikstra
+	Algoritmo di Bellman-Ford
