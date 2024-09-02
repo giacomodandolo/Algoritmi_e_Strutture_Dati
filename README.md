@@ -100,7 +100,7 @@
 ### DOCUMENTI GENERALI
  [Consigli di preparazione](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/Documenti_Teoria/Consigli_Preparazione.pdf) |
  [Esercizi di teoria risolti](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/Documenti_Teoria/Teoria_Risolti.pdf) | 
- [Esercizi di teoria usciti negli anni](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/Documenti_Teoria/Raccolta_Esercizi.txt)
+ [Lista esercizi di teoria usciti negli anni](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/Documenti_Teoria/Raccolta_Esercizi.txt)
 
 ### 2014
  [06 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Temi_esame/2014_02_06.pdf) <br/>
