@@ -57,6 +57,10 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "cstdlib": "c"
+    "cstdlib": "c",
+    "graph.h": "c",
+    "stdio.h": "c",
+    "token.h": "c",
+    "scelta.h": "c"
   }
 }

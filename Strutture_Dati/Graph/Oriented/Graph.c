@@ -431,7 +431,7 @@ void DAGrts(Graph G) {
         ts[v] = -1; 
     }
     for (v = 0; v < G->V; v++)
-        if (pre[v]== -1) 
+        if (pre[v] == -1) 
             TSdfsR(G, v, ts, pre, &time);
 
     printf("DAG nodes in reverse topological order \n");

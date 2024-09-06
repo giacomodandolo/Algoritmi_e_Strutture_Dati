@@ -16,7 +16,7 @@ X	LIS
 
 Paradigma Greedy
 X	Codice di Huffman
-	Massimo numero di attività mutuamente compatibili
+X	Massimo numero di attività mutuamente compatibili
 
 Tabella di Hash
 X	Inserimento in tabella di Hash
