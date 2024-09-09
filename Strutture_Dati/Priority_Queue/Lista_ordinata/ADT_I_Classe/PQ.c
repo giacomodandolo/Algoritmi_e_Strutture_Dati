@@ -30,7 +30,7 @@ int PQempty(PQ pq) {
     return pq->head == NULL;
 }
 
-void PQinsert (PQ pq, Item val) {
+void PQinsert(PQ pq, Item val) {
     link x, p;
     Key k = KEYget(val);
 

@@ -61,6 +61,7 @@
     "graph.h": "c",
     "stdio.h": "c",
     "token.h": "c",
-    "scelta.h": "c"
+    "scelta.h": "c",
+    "node.h": "c"
   }
 }
