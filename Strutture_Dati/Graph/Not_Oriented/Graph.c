@@ -137,7 +137,7 @@ void GRAPHremoveE(Graph G, int id1, int id2) {
 static int pathR(Graph G, int v, int w, int *visited) {
     int t;
 
-    if (v == w) 
+    if (v == w)
         return 1;
     visited[v] = 1;
     for (t = 0 ; t < G->V ; t++)
@@ -156,7 +156,7 @@ static int pathRH(Graph G, int v, int w, int d, int *visited) {
     int t;
     
     if (v == w) {
-        if (d == 0) 
+        if (d == 0)
             return 1;
         else 
             return 0;
@@ -182,7 +182,7 @@ void GRAPHpath(Graph G, int id1, int id2) {
         visited[t] = 0;
     if (id1 < 0 || id2 < 0) 
         return;
-    found = pathR(G, id1, id2, G->V-1, visited);
+    found = pathR(G, id1, id2, visited);
     if (found == 0) 
         printf("\n Path not found!\n");
 }

@@ -62,6 +62,7 @@
     "stdio.h": "c",
     "token.h": "c",
     "scelta.h": "c",
-    "node.h": "c"
+    "node.h": "c",
+    "elenco.h": "c"
   }
 }
