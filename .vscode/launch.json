@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/giaco/Documents/Uni/Algoritmi_e_Strutture_Dati/Esame/Soluzioni_Programmazione/2024_09_13",
-      "program": "c:/Users/giaco/Documents/Uni/Algoritmi_e_Strutture_Dati/Esame/Soluzioni_Programmazione/2024_09_13/build/Debug/outDebug",
+      "cwd": "c:/Users/giaco/OneDrive/Documents/Università/Algoritmi_e_Strutture_Dati/Laboratori/Esercizi/Lab07/E02_fast",
+      "program": "c:/Users/giaco/OneDrive/Documents/Università/Algoritmi_e_Strutture_Dati/Laboratori/Esercizi/Lab07/E02_fast/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
