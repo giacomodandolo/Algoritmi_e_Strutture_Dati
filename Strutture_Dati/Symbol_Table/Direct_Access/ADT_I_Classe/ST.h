@@ -1,7 +1,7 @@
 #ifndef ST_H
 #define ST_H
 
-typedef struct symboltable *ST;
+typedef struct symbtab *ST;
 
 int GETindex(Key k);
 
