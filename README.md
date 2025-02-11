@@ -152,4 +152,8 @@
  [07 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Esame/Temi_Esame/2023_02_07.pdf) <br/>
  [11 Maggio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Esame/Temi_Esame/2023_05_11.pdf)
  
- 
+### 2024
+ [13 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Esame/Temi_Esame/2024_02_13.pdf) <br/>
+ [26 Febbraio](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Esame/Temi_Esame/2024_02_26.pdf) <br/>
+ [13 Settembre](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Esame/Temi_Esame/2024_09_13.pdf)
+
