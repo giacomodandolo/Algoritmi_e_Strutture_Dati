@@ -111,7 +111,7 @@ static int comb_sempl(int pos, Graph G, Coll *V, Coll sol, int k, int start, int
 static void powerset_r(int pos, Graph G, TriPack sol, Coll *V, int n, int k, TriPack *best_sol, int start) {
     int i;
 
-    if (start >= k) {
+    if (start > k) {
         if (checkTriPack(G, sol) == 1)
             if (TRIPACKdim(sol) > TRIPACKdim(*best_sol))
                 *best_sol = TRIPACKcopy(sol);
@@ -137,7 +137,8 @@ static void powerset(Graph G, Coll *V, int n, TriPack *best_sol) {
 
 void GRAPHfindMaxTripack(Graph G) {
     TriPack best_solTP = TRIPACKinit(G->V);
-    Coll *V = (Coll*) malloc(3*G->V * sizeof(Coll));
+    int n_max = (G->V*(G->V-1)*(G->V-2))/6;
+    Coll *V = (Coll*) malloc(n_max * sizeof(Coll));
     Coll solV = COLLinit(-1, -1, -1);
     int n;
 
