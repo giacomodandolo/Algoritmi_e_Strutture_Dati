@@ -13,6 +13,7 @@ typedef struct activities {
     Activity *a;
 } *ACT;
 
+/* Ottieni una singola attività */
 static Activity ACTIVITYfile(FILE *file) {
     Activity att;
     char nome[MAX_LEN];
@@ -30,16 +31,18 @@ static Activity ACTIVITYfile(FILE *file) {
     return att;
 }
 
+/* Ottieni l'indice dell'attività identificata dal nome */
 static int ACTIVITYindex(ACT atts, char *s) {
     int i;
 
     for (i = 0; i < atts->NA; i++)
-        if (strcmp(atts->a[i], s) == 0)
+        if (strcmp(atts->a[i]->nome, s) == 0)
             return i;
     
     return -1;
 }
 
+/* Ottieni i vincoli di precedenza presenti nel file */
 static ACT ACTIVITYfileVincoli(FILE *file, ACT atts) {
     int i, j, index;
     char s[MAX_LEN];
@@ -63,21 +66,26 @@ static ACT ACTIVITYfileVincoli(FILE *file, ACT atts) {
     return atts;
 }
 
+/* Leggi l'intero file contenente le attività */
 ACT activityRead(FILE *file) {
     int i;
     ACT atts;
 
     atts = (ACT) malloc(sizeof(*atts));
     fscanf(file, "%d %d", &(atts->NA), &(atts->NP));
+    
+    /* Per le attività */
     for (i = 0; i < atts->NA; i++)
         atts->a[i] = ACTIVITYfile(file);
     
+    /* Per i vincoli */
     for (i = 0; i < atts->NP; i++)
         atts = ACTIVITYfileVincoli(file, atts);
 
     return atts;
 }
 
+/* Controlla che le precedenze siano rispettate */
 static int checkUntilIndex(ACT a, int index, char **selected, int curr) {
     int i, j, k;
     int *isIn;
@@ -106,10 +114,12 @@ int checkSelection(ACT a, char **selected, int nsel) {
     int i, j;
 
     for (i = 0; i < nsel; i++) {
+        /* Trova l'attività che si vuole selezionare */
         j = ACTIVITYindex(a, selected[i]);
         if (j == -1)
             return 0;
 
+        /* Controlla che siano rispettati i vincoli */
         if (checkUntilIndex(a, j, selected, i) == 0)
             return 0;
     }
@@ -117,7 +127,7 @@ int checkSelection(ACT a, char **selected, int nsel) {
     return 1;
 }
 
-void disp_rip(int pos, ACT atts, char **sol, char **best_sol, int n, int *best_n, int val, int *best_val) {
+void comb_sempl(int pos, ACT atts, char **sol, char **best_sol, int n, int *best_n, int val, int *best_val, int start) {
     int i;
 
     if (pos >= atts->NA) {
@@ -130,11 +140,10 @@ void disp_rip(int pos, ACT atts, char **sol, char **best_sol, int n, int *best_n
         }
         return;
     }
-
-    sol[n] = atts->a[pos]->nome;
-    disp_rip(pos+1, atts, sol, best_sol, n+1, best_n, val + atts->a[pos]->val, best_val);
-    disp_rip(pos+1, atts, sol, best_sol, n, best_n, val, best_val);
-
+    for (i = start; i < n; i++) {
+        sol[i] = atts->a[pos]->nome;
+        comb_sempl(pos+1, atts, sol, best_sol, n, best_n, val + atts->a[pos]->val, best_val, start+1);
+    }
     return;
 }
 
@@ -147,7 +156,7 @@ char **bestSelection(ACT atts, int *n) {
     sol = (char**) malloc(atts->NA * sizeof(char*));
     best_sol = (char**) malloc(atts->NA * sizeof(char*));
 
-    disp_rip(0, atts, sol, best_sol, 0, 0, 0, 0);
+    comb_sempl(0, atts, sol, best_sol, atts->NA, 0, 0, 0, 0);
 
     sortSol(atts, best_sol, n);
 
