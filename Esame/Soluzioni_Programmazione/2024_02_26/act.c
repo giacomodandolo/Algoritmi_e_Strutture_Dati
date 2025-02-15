@@ -147,8 +147,9 @@ void comb_sempl(int pos, ACT atts, char **sol, char **best_sol, int n, int *best
     return;
 }
 
-void sortSol(ACT a, char **best_sol, int n) {
-    QuickSortR(best_sol, 0, n);
+// Order acts by starting time
+void sortACTS(ACT acts, int n) {
+    acts->a = QuickSortR(acts->a, 0, n);
 }
 
 char **bestSelection(ACT atts, int *n) {
@@ -156,9 +157,9 @@ char **bestSelection(ACT atts, int *n) {
     sol = (char**) malloc(atts->NA * sizeof(char*));
     best_sol = (char**) malloc(atts->NA * sizeof(char*));
 
-    comb_sempl(0, atts, sol, best_sol, atts->NA, 0, 0, 0, 0);
+    sortACTS(atts, n);
 
-    sortSol(atts, best_sol, n);
+    comb_sempl(0, atts, sol, best_sol, atts->NA, 0, 0, 0, 0);
 
     return best_sol;
 }

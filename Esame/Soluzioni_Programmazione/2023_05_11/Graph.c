@@ -111,14 +111,14 @@ static int comb_sempl(int pos, Graph G, Coll *V, Coll sol, int k, int start, int
 static void powerset_r(int pos, Graph G, TriPack sol, Coll *V, int n, int k, TriPack *best_sol, int start) {
     int i;
 
-    if (start > k) {
+    if (pos > k) {
         if (checkTriPack(G, sol) == 1)
             if (TRIPACKdim(sol) > TRIPACKdim(*best_sol))
                 *best_sol = TRIPACKcopy(sol);
         return;
     }
 
-    for (i = 0; i < n; i++) {
+    for (i = start; i < n; i++) {
         sol->V[pos] = COLLcopy(V[i]);
         sol->n = sol->n + 1;
         powerset_r(pos+1, G, sol, V, n, k, best_sol, start+1);
