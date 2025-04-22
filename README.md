@@ -1,6 +1,15 @@
 # ALGORITMI E STRUTTURE DATI
  Materiale per il corso di Algoritmi e Strutture Dati del PoliTO. 
 
+# CONSIGLI
+Di seguito alcuni consigli forniti dal sottoscritto ad alcuni studenti a cui ho fatto ripetizioni: 
+<br/>
+1) prendete la teoria e studiate i modelli del calcolo combinatorio, e notate che essenzialmente ce ne sono 4 tipi: disposizioni (s/r), combinazioni (s/r), powerset e partizioni. Si noti anche come i modelli hanno realizzazioni molto simili tra loro e cambia veramente poco. Sapendo questo, saprete svolgere, con un pochino di esercizio, buona parte delle tracce da 18pt (vedi punto 3);
+2) evitate le tracce da 12pt, poiché, oltre a partire con -6pt di base, sono scritte molto male e in maniera molto confusionaria, mentre le tracce da 18pt, tendenzialmente, sono scritte con più cura e hanno una forma più "standard";
+3) riguardo alla forma delle tracce da 18pt, tendenzialmente ci sono poche cose che chiedono, solo definiti in salsa diversa, e sono definite dai seguenti temi d'esame selezionati: 11/05/2023 (powerset e combinazioni semplici), 09/02/2022 (percorso su matrice con disposizioni semplici) e 27/06/2022 (partizioni di un insieme);
+4) quando siete all'esame, e su questo ci si può preparare, è importantissimo RAGIONARE e saper EMULARE in un qualche modo ciò che scrivete (con uno schemetto, un esempio di esecuzione che viene anche fornito, e così via, in base a cosa vi aiuta di più), anche prima di iniziare a scrivere codice a caso, per poi capire che è sbagliato e dover rifare parti, che magari portano a vari errori di distrazione;
+5) se non l'avete fatto, fate i laboratori, sono utilissimi dal punto di vista applicativo (e quindi nella stesura di codice all'esame) e forniscono, in parte, punti utili all'esame.
+
 # TEORIA
  [Strutture Dati](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Programmazione) | 
  [Algoritmi](https://github.com/giacomodandolo/Algoritmi_e_Strutture_Dati/tree/main/Teoria) | 
